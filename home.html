@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/logo.png"/>
+	<title>Home Page</title>
+	<link href="s.css" type="text/css" rel="stylesheet">
+	<link href="signin.css" type="text/css" rel="stylesheet">
+	<link href="signup.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<!----------------------------------------HEADER-PORTAL-END--------------------------------------------->
+<div class="header">
+
+	<div class="container">
+		<a href="#"><img src="img\logo.png"></a>
+		<form class="search">
+			<input class="search" type="text" name="search" placeholder="Search..">
+		</form>
+		<div class="reg">
+			<p onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a class="btn-rega" href="#">Sign In</a></p>
+			<s>&#124;</s>
+			<p onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a class="btn-regb" href="#">Sign Up</a></p>
+		</div>
+		<ul class="nav">
+			<li><a class="btn-head" href="#">Home</a></li>
+			<li><a class="btn-head" href="#">Profile</a></li>
+			<li><a class="btn-head" href="#">Projects</a></li>
+			<li><a class="btn-head" href="#">Blog</a></li>
+			<li><a class="btn-head" href="#">About</a></li>
+			<li><a class="btn-head" href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!----------------------------------------HEADER-PORTAL-END--------------------------------------------->
+
+<!------------------------------------------SIGN-IN-START----------------------------------------------->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="POST" action="signin.php">
+  <div class="legsi">
+	<legend>&nbsp;&nbsp;&nbsp;SIGN IN</legend>
+  </div>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/signinlogo.png" alt="User" class="avatar">
+    </div>
+
+    <div class="containerr">
+      <label><b>Username</b></label>
+      <input type="email" class="signin" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="pass" required>
+        
+      <button type="submit" name="submit" value="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="containerr" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-------------------------------------------SIGN-IN-END----------------------------------------------->
+
+<!---------------------------------------------SIGN-UP-START------------------------------------------->
+
+<div id="id02" class="smodal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="su-modal-content animate" method="POST" action="signup.php">
+  <div class="legsu">
+	<legend>&nbsp;&nbsp;&nbsp;SIGN UP</legend>
+  </div>
+    <div class="su-container">
+	  <label><b>Name</b></label>
+      <input type="text" class="signup" placeholder="Enter Name" name="name" required>
+	  
+      <label><b>Email</b></label>
+      <input type="email" class="signup" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="pass" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" class="sign" placeholder="Repeat Password" name="cpass" required>
+      <input type="checkbox" checked="checked"> Remember me</br>
+      By creating an account you agree to our <a href="#">Terms & Privacy</a>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="su-cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" name="submit" value="submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+var smodal = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == smodal || event.target == modal ) {
+        smodal.style.display = "none";
+		modal.style.display = "none";
+    }
+}
+</script>
+<!----------------------------------------------SIGN-UP-END-------------------------------------------->
+
+<!----------------------------------------HOME-PORTAL-END--------------------------------------------->
+<div class="jumbotron">
+	<div class="icon">
+		<a href="https://www.facebook.com/aman.gupta.3110" target="_blank"><img src="img\fb.png"></a>
+
+		<a href="https://twitter.com/Amanguta" target="_blank"><img src="img\twitter.png"></a>
+		<a href="https://www.linkedin.com/in/aman-gupta-b2891855/" target="_blank"><img src="img\li.png"></a>
+
+	</div>
+    <div class="main">
+        <h1>Aman Gupta</h1>
+        <a class="btn-main" href="#">Get started</a>
+	</div>
+</div>
+
+<div class="about">
+    <img src="img/aman.jpeg">
+	<h3>About me</h3>
+    <p>I am a professional website design firm dedicated to professional service, quality web design, and trustworthy results. With careful audience targeting, we create highly functional user interfaces with the perfect mixture of simplicity, elegance, and innovation for each of our clients.</p>
+</div>
+<!----------------------------------------HOME-PORTAL-END--------------------------------------------->
+
+<!----------------------------------------FOOTER-PORTAL-END--------------------------------------------->
+<div class="footer">
+<div class="footer-container">
+	<div class="contain footercontborder">
+		<h2>About</h2>
+		<p>I am a super-creative web design agency based in Kolkata, India. My Web Design team offer web services world wide such as affordable web design, web development, web hosting, social media marketing and much more!</p> 
+    </div>
+    <div class="contain footercontborder">
+		<h2>&emsp;&ensp;&nbsp;Services</h2>
+		<ul class="work">
+			<li>WEBSITE DESIGN</li>
+			<li>FACEBOOK PAGE DESIGN</li>
+			<li>PROMOTIONAL BANNER</li>
+			<li>SIMPLE WEBSITE DESIGN</li>
+			<li>WEBSITE MAINTENANCE</li>
+		</ul>
+	</div>
+	<div class="contain">
+		<h2>&emsp;&ensp;&nbsp;Contact</h2>
+		<ul>
+			<li id="name">Aman Gupta</li>
+			<li>aman.gupta609@gmail.com</li>
+			<li>7059083695</li>
+			<li>Saltlake City, Kolkata</li>
+			<li>West Bengal</li>
+		</ul>
+	</div>
+	<div id="idn"
+		<p>&copy; Aman Gupta &#8482</p>
+	</div>
+</div>
+</div>
+<!----------------------------------------FOOTER-PORTAL-END--------------------------------------------->  
+  
+
+
+<!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+</body>
+</html>
